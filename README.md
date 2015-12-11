@@ -7,6 +7,8 @@
 ## Building
 As with every other dub project out there, just run `dub` inside the project's directory. If you're using an IDE, you're on your own.
 
+Will later be turned into a library project. Just a program while initial development is still ongoing.
+
 ## Current features
  - A simple wrapper around the ldap struct
    - All it can do right now is connect and bind
