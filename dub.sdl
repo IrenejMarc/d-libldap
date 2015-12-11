@@ -1,0 +1,5 @@
+name "d-libldap"
+description "A minimal D application."
+copyright "Copyright © 2015, Irenej"
+authors "Irenej"
+libs "ldap"
