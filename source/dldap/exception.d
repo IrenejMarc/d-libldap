@@ -1,4 +1,4 @@
-module ldap.exception;
+module dldap.exception;
 
 import std.exception;
 
