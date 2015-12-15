@@ -19,5 +19,5 @@ Will later be turned into a library project. Just a program while initial develo
 ## Documentation
 Documentation will be written inside the source itself somewhere in the future. For now, the goal is to get the basics working.
 
-## LIcence
+## Licence
 MIT
