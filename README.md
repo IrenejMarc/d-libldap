@@ -12,8 +12,8 @@ Will later be turned into a library project. Just a program while initial develo
 ## Current features
  - A simple wrapper around the ldap struct
    - connect
-	 - bind
-	 - search
+   - bind
+   - search
  - That's it, really. For now.
  
 ## Documentation
