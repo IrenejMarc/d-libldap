@@ -33,6 +33,11 @@ struct LDAPMessage
 		LDAPResultType type;
 		string dn;
 		string[string] attributes;
+
+		string opIndex(string attr)
+		{
+			return attributes[attr];
+		}
 	}
 
 	~this()
