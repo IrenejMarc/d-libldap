@@ -45,15 +45,19 @@ class LDAPConnection
 		ld = ldap_init(host.cString, port);
 	}
 
-	void simpleBindS(string dn, string pass)
+	bool simpleBindS(string dn, string pass)
 	{
 		int status = ldap_simple_bind_s(
 				ld, dn.cString, 
 				pass.cString);
 
 		if (status != LDAP_SUCCESS)
-			throw new LDAPException("Connection failed: " ~ ldap_err2string(status).fromStringz.to!string);
+			return false;
+
+		return true;
 	}
+
+	alias bind = simpleBindS;
 
 	void unbindS()
 	{
