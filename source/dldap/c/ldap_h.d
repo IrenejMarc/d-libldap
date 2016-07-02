@@ -14,6 +14,7 @@ extern(C):
 
 // Init
 ldap* ldap_init (const char* host, int port);
+int ldap_initialize (ldap** ldp, const char* uri);
 
 // Bind -- deprecated. TODO: ldap_sasl_bind(_s)
 int ldap_bind(ldap *ld, const char* dn, const char* passwd, int authmethod);
