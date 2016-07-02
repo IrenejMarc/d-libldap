@@ -40,6 +40,11 @@ class LDAPConnection
 		ldap* ld;
 	}
 
+	this(const string uri)
+	{
+		ldap_initialize(&ld, uri.cString);
+	}
+
 	this(const string host, const ushort port)
 	{
 		ld = ldap_init(host.cString, port);
